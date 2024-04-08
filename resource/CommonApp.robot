@@ -5,10 +5,9 @@ Library  SeleniumLibrary
 ${BROWSER} =  Chrome
 ${START_URL} =  https://linx.com.br
 
-
 *** Keywords ***
 Begin Web Test
-    open browser  about:blank  ${BROWSER}
+    open browser  ${START_URL}  ${BROWSER}
     Set Selenium Speed    0.5
     #maximize browser window
 

@@ -13,8 +13,10 @@ Verify Page Loaded
 
 Should contains "${subsidiary_name}" subsidiary info
     Page Should Contain Element    //H3[contains(text(), "${subsidiary_name}")]
+    Log    The subsidiary ${subsidiary_name} is displayed
 
 Should not contains "${subsidiary_name}" subsidiary info
     Page Should Not Contain Element    //H3[contains(text(), "${subsidiary_name}")]
+    Log    The subsidiary ${subsidiary_name} is not displayed
     
 
